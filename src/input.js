@@ -19,6 +19,7 @@ export default class InputHandler {
     document.addEventListener("keyup", event => {
       switch (event.keyCode) {
         case 37:
+          // here 0 is the posiiton so negative is to the left
           if (paddle.speed < 0) paddle.stop();
           break;
 
